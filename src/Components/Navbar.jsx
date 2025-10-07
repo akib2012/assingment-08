@@ -14,22 +14,24 @@ const Navbar = () => {
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
 
-                        <Link><li><a>Home</a></li></Link>
-                        <Link><li><a>Apps</a></li></Link>
+                        <Link to='/'><li><a>Home</a></li></Link>
+                        <Link to='/allapps'><li><a>Apps</a></li></Link>
                         <Link><li><a>Installation</a></li></Link>
 
                     </ul>
                 </div>
-                <div className='flex  justify-center items-center'>
-                    <img className='h-8 w-8' src={logoimg} alt="" />
-                    <Link className="btn btn-ghost text-xl">HERO.IO</Link>
-                </div>
+                
+                    <div className='flex  justify-center items-center'>
+                        <img className='h-8 w-8' src={logoimg} alt="" />
+                        <Link to='/' className="btn btn-ghost text-xl">HERO.IO</Link>
+                    </div>
+                
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 font-semibold">
-                    <Link><li><a>Home</a></li></Link>
-                    <Link><li><a>Apps</a></li></Link>
-                    <Link><li><a>Installation</a></li></Link>
+                    <Link to='/'><li><a>Home</a></li></Link>
+                    <Link to='/allapps'><li><a>Apps</a></li></Link>
+                    <Link ><li><a>Installation</a></li></Link>
                 </ul>
             </div>
             <div className="navbar-end">

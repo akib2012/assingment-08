@@ -1,0 +1,546 @@
+[
+  {
+    "image": "https://logo.clearbit.com/google.com",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 1,
+    "description": "Navigation and mapping service offering real-time GPS tracking, traffic updates, and local business discovery.",
+    "size": 85,
+    "reviews": 32000000,
+    "ratingAvg": 4.5,
+    "downloads": "12M",
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 24000000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/spotify.com",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 2,
+    "description": "Stream millions of songs and podcasts from artists all over the world with personalized recommendations.",
+    "size": 92,
+    "reviews": 27000000,
+    "ratingAvg": 4.6,
+    "downloads": "8M",
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 600000 },
+      { "name": "3 star", "count": 1200000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 20000000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/facebook.com",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 3,
+    "description": "Social networking app to connect with friends, share photos, videos, and stay updated.",
+    "size": 120,
+    "reviews": 110000000,
+    "ratingAvg": 4.1,
+    "downloads": "14M",
+    "ratings": [
+      { "name": "1 star", "count": 15000000 },
+      { "name": "2 star", "count": 7000000 },
+      { "name": "3 star", "count": 10000000 },
+      { "name": "4 star", "count": 25000000 },
+      { "name": "5 star", "count": 52000000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/microsoft.com",
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft Corporation",
+    "id": 4,
+    "description": "Collaborative workspace for chat, video meetings, and document sharing for teams.",
+    "size": 135,
+    "reviews": 8500000,
+    "ratingAvg": 4.3,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 4200000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/netflix.com",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 5,
+    "description": "Stream award-winning movies, series, and documentaries anytime on any device.",
+    "size": 105,
+    "reviews": 25000000,
+    "ratingAvg": 4.4,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 800000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 6000000 },
+      { "name": "5 star", "count": 14700000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/amazon.com",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon.com, Inc.",
+    "id": 6,
+    "description": "Shop millions of products and enjoy fast delivery with the Amazon app.",
+    "size": 82,
+    "reviews": 30000000,
+    "ratingAvg": 4.5,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 7000000 },
+      { "name": "5 star", "count": 19500000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/zoom.us",
+    "title": "Zoom Cloud Meetings",
+    "companyName": "Zoom Video Communications, Inc.",
+    "id": 7,
+    "description": "Video conferencing platform for meetings, webinars, and collaboration.",
+    "size": 78,
+    "reviews": 19000000,
+    "ratingAvg": 4.3,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star", "count": 700000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 10500000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/twitter.com",
+    "title": "X (Twitter)",
+    "companyName": "X Corp.",
+    "id": 8,
+    "description": "Join the conversation with real-time news, trends, and updates around the world.",
+    "size": 80,
+    "reviews": 21000000,
+    "ratingAvg": 4.0,
+    "downloads": "7M",
+    "ratings": [
+      { "name": "1 star", "count": 3000000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 4500000 },
+      { "name": "5 star", "count": 10000000 }
+    ]
+  },
+  
+  {
+    "image": "https://logo.clearbit.com/tiktok.com",
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
+    "id": 9,
+    "description": "Short-form mobile video platform to create, watch, and share entertaining clips.",
+    "size": 110,
+    "reviews": 45000000,
+    "ratingAvg": 4.4,
+    "downloads": "15M",
+    "ratings": [
+      { "name": "1 star", "count": 2500000 },
+      { "name": "2 star", "count": 2000000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 9000000 },
+      { "name": "5 star", "count": 27500000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/snapchat.com",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 10,
+    "description": "Communicate through photos, videos, and stories that disappear after viewing.",
+    "size": 95,
+    "reviews": 22000000,
+    "ratingAvg": 4.2,
+    "downloads": "11M",
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 1200000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 11300000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/adobe.com",
+    "title": "Adobe Lightroom",
+    "companyName": "Adobe Inc.",
+    "id": 11,
+    "description": "Powerful photo editing and organization tool for professional photographers.",
+    "size": 88,
+    "reviews": 9000000,
+    "ratingAvg": 4.6,
+    "downloads": "4M",
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 6050000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/paypal.com",
+    "title": "PayPal",
+    "companyName": "PayPal Holdings, Inc.",
+    "id": 12,
+    "description": "Send and receive payments securely, and manage your transactions easily.",
+    "size": 70,
+    "reviews": 13000000,
+    "ratingAvg": 4.2,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 5700000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/whatsapp.com",
+    "title": "WhatsApp Messenger",
+    "companyName": "WhatsApp LLC",
+    "id": 13,
+    "description": "Fast and secure messaging app for text, voice, and video calls.",
+    "size": 60,
+    "reviews": 160000000,
+    "ratingAvg": 4.6,
+    "downloads": "14M",
+    "ratings": [
+      { "name": "1 star", "count": 5000000 },
+      { "name": "2 star", "count": 3000000 },
+      { "name": "3 star", "count": 7000000 },
+      { "name": "4 star", "count": 20000000 },
+      { "name": "5 star", "count": 125000000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/telegram.org",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 14,
+    "description": "Fast, secure, and cloud-based messaging app with advanced privacy features.",
+    "size": 75,
+    "reviews": 13000000,
+    "ratingAvg": 4.5,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 700000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 7900000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/discord.com",
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "id": 15,
+    "description": "Chat, voice, and video communication platform for communities and gamers.",
+    "size": 90,
+    "reviews": 15000000,
+    "ratingAvg": 4.5,
+    "downloads": "7M",
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 600000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 9500000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/uber.com",
+    "title": "Uber",
+    "companyName": "Uber Technologies, Inc.",
+    "id": 16,
+    "description": "Request rides, track your driver, and travel affordably with Uber.",
+    "size": 65,
+    "reviews": 25000000,
+    "ratingAvg": 4.4,
+    "downloads": "13M",
+    "ratings": [
+      { "name": "1 star", "count": 1200000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 15900000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/airbnb.com",
+    "title": "Airbnb",
+    "companyName": "Airbnb, Inc.",
+    "id": 17,
+    "description": "Find unique places to stay and experiences around the world.",
+    "size": 80,
+    "reviews": 8000000,
+    "ratingAvg": 4.6,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 4600000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/booking.com",
+    "title": "Booking.com",
+    "companyName": "Booking Holdings Inc.",
+    "id": 18,
+    "description": "Book hotels, flights, and accommodations at the best rates.",
+    "size": 77,
+    "reviews": 12000000,
+    "ratingAvg": 4.6,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star", "count": 250000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star","count":2500000 },
+      { "name": "5 star","count":8050000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/pinterest.com",
+    "title": "Pinterest",
+    "companyName": "Pinterest, Inc.",
+    "id": 19,
+    "description": "Discover creative ideas for recipes, home decor, fashion, and more.",
+    "size": 72,
+    "reviews": 18000000,
+    "ratingAvg": 4.7,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star","count":200000 },
+      { "name": "2 star","count":300000 },
+      { "name": "3 star","count":700000 },
+      { "name": "4 star","count":3000000 },
+      { "name": "5 star","count":14000000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/linkedin.com",
+    "title": "LinkedIn",
+    "companyName": "LinkedIn Corporation",
+    "id": 20,
+    "description": "Professional networking platform to connect with colleagues and explore job opportunities.",
+    "size": 85,
+    "reviews": 16000000,
+    "ratingAvg": 4.4,
+    "downloads": "7M",
+    "ratings": [
+      { "name": "1 star","count":800000 },
+      { "name": "2 star","count":700000 },
+      { "name": "3 star","count":2000000 },
+      { "name": "4 star","count":5000000 },
+      { "name": "5 star","count":7500000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/reddit.com",
+    "title": "Reddit",
+    "companyName": "Reddit Inc.",
+    "id": 21,
+    "description": "Community-based discussion and content sharing platform with millions of topics.",
+    "size": 68,
+    "reviews": 12000000,
+    "ratingAvg": 4.3,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star","count":800000 },
+      { "name": "2 star","count":700000 },
+      { "name": "3 star","count":1500000 },
+      { "name": "4 star","count":3500000 },
+      { "name": "5 star","count":5500000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/slack.com",
+    "title": "Slack",
+    "companyName": "Slack Technologies, LLC",
+    "id": 22,
+    "description": "Messaging app for business collaboration, channels, and team communication.",
+    "size": 95,
+    "reviews": 8500000,
+    "ratingAvg": 4.5,
+    "downloads": "2M",
+    "ratings": [
+      { "name": "1 star","count":200000 },
+      { "name": "2 star","count":150000 },
+      { "name": "3 star","count":500000 },
+      { "name": "4 star","count":2500000 },
+      { "name": "5 star","count":5500000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/tinder.com",
+    "title": "Tinder",
+    "companyName": "Tinder Inc.",
+    "id": 23,
+    "description": "Swipe to meet new people, chat, and make connections nearby or globally.",
+    "size": 70,
+    "reviews": 10000000,
+    "ratingAvg": 4.2,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star","count":800000 },
+      { "name": "2 star","count":700000 },
+      { "name": "3 star","count":1200000 },
+      { "name": "4 star","count":3000000 },
+      { "name": "5 star","count":4300000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/skype.com",
+    "title": "Skype",
+    "companyName": "Microsoft Corporation",
+    "id": 24,
+    "description": "Voice and video calling app for personal and professional use.",
+    "size": 65,
+    "reviews": 11000000,
+    "ratingAvg": 4.3,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star","count":600000 },
+      { "name": "2 star","count":500000 },
+      { "name": "3 star","count":1500000 },
+      { "name": "4 star","count":3500000 },
+      { "name": "5 star","count":5000000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/imo.im",
+    "title": "imo",
+    "companyName": "imo.im",
+    "id": 25,
+    "description": "Free video calls and chat across mobile and desktop platforms.",
+    "size": 60,
+    "reviews": 9000000,
+    "ratingAvg": 4.4,
+    "downloads": "4M",
+    "ratings": [
+      { "name": "1 star","count":300000 },
+      { "name": "2 star","count":200000 },
+      { "name": "3 star","count":800000 },
+      { "name": "4 star","count":2500000 },
+      { "name": "5 star","count":5200000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/zoomcar.com",
+    "title": "Zoomcar",
+    "companyName": "Zoomcar India Pvt Ltd",
+    "id": 26,
+    "description": "Self-drive car rental service for urban travel convenience.",
+    "size": 80,
+    "reviews": 7000000,
+    "ratingAvg": 4.3,
+    "downloads": "2M",
+    "ratings": [
+      { "name": "1 star","count":100000 },
+      { "name": "2 star","count":150000 },
+      { "name": "3 star","count":500000 },
+      { "name": "4 star","count":2000000 },
+      { "name": "5 star","count":4150000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/youtube.com",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 27,
+    "description": "Watch, upload, and share videos with millions of users worldwide.",
+    "size": 120,
+    "reviews": 180000000,
+    "ratingAvg": 4.7,
+    "downloads": "15M",
+    "ratings": [
+      { "name": "1 star","count":3000000 },
+      { "name": "2 star","count":2000000 },
+      { "name": "3 star","count":7000000 },
+      { "name": "4 star","count":20000000 },
+      { "name": "5 star","count":148000000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/khanacademy.org",
+    "title": "Khan Academy",
+    "companyName": "Khan Academy",
+    "id": 28,
+    "description": "Free online learning platform offering lessons and exercises across subjects.",
+    "size": 50,
+    "reviews": 5000000,
+    "ratingAvg": 4.8,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star","count":50000 },
+      { "name": "2 star","count":50000 },
+      { "name": "3 star","count":200000 },
+      { "name": "4 star","count":1000000 },
+      { "name": "5 star","count":8800000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/duolingo.com",
+    "title": "Duolingo",
+    "companyName": "Duolingo, Inc.",
+    "id": 29,
+    "description": "Learn languages for free with bite-sized lessons, practice, and games.",
+    "size": 55,
+    "reviews": 12000000,
+    "ratingAvg": 4.7,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star","count":200000 },
+      { "name": "2 star","count":150000 },
+      { "name": "3 star","count":700000 },
+      { "name": "4 star","count":2500000 },
+      { "name": "5 star","count":8700000 }
+    ]
+  },
+  {
+    "image": "https://logo.clearbit.com/edx.org",
+    "title": "edX",
+    "companyName": "edX Inc.",
+    "id": 30,
+    "description": "Access free online courses from top universities and institutions worldwide.",
+    "size": 60,
+    "reviews": 4000000,
+    "ratingAvg": 4.6,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star","count":50000 },
+      { "name": "2 star","count":50000 },
+      { "name": "3 star","count":300000 },
+      { "name": "4 star","count":1000000 },
+      { "name": "5 star","count":2550000 }
+    ]
+  }
+
+
+  
+]

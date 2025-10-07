@@ -3,6 +3,7 @@ import Banner from '../Components/Banner';
 import Homeapps from '../Components/Homeapps';
 
 const Home = () => {
+    
     return (
         <div>
             <div>
@@ -11,6 +12,7 @@ const Home = () => {
             <div>
                 <Homeapps></Homeapps>
             </div>
+            
         </div>
     );
 };

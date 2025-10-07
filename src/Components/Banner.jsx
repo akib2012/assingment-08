@@ -2,6 +2,7 @@ import React from 'react';
 import play from '../assets/logoplay.png'
 import apple from '../assets/app-store.png'
 import hero from '../assets/hero.png'
+import { Link } from 'react-router';
 
 const Banner = () => {
     return (
@@ -14,20 +15,24 @@ const Banner = () => {
                 </div>
             </div>
             <div className='flex justify-center gap-4  items-center my-8 overflow-hidden'>
-                <div className='flex gap-2.5 items-center border border-gray-300 p-4 rounded-2xl'>
-                    <img className='h-10' src={play} alt="" />
-                    <p className='font-bold text-xl'>Google Play</p>
-                </div>
-                <div className='flex gap-2.5 items-center border border-gray-300 p-4 rounded-2xl'>
-                    <img className='h-10' src={apple} alt="" />
-                    <p className='font-bold text-xl'>App Store</p>
-                </div>
+                <Link to='https://play.google.com/store/apps?hl=en'>
+                    <div className='flex gap-2.5 items-center border border-gray-300 p-4 rounded-2xl'>
+                        <img className='h-10' src={play} alt="" />
+                        <p className='font-bold text-xl'>Google Play</p>
+                    </div>
+                </Link>
+                <Link to='https://apps.apple.com/bj/developer/apple/id284417353?mt=12'>
+                    <div className='flex gap-2.5 items-center border border-gray-300 p-4 rounded-2xl'>
+                        <img className='h-10' src={apple} alt="" />
+                        <p className='font-bold text-xl'>App Store</p>
+                    </div>
+                </Link>
             </div>
 
             <div className='bg-[#F5F5F5] flex justify-center items-center px-5 lg:px-0'>
                 <img src={hero} alt="" />
             </div>
- 
+
             <div className=" w-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-center py-12 px-4">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-10">
                     Trusted By Millions, Built For You
