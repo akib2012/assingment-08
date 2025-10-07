@@ -9,12 +9,12 @@ const Banner = () => {
         <div>
             <div>
                 <div>
-                    <h3 className='text-7xl font-bold text-center mt-[40px] md:mt-[60px] lg:mt-[90px]'>We Build <br />
+                    <h3 className=' text-4xl md:text-5xl lg:text-7xl font-bold text-center mt-[40px] md:mt-[60px] lg:mt-[90px]'>We Build <br />
                         <span className='text-purple-600'>Productive</span> Apps</h3>
-                    <p className='text-center my-6 mx-4 md:mx-7  lg:mx-0 text-[20px] text-gray-700'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
+                    <p className='text-center my-6 mx-8  md:mx-7  lg:mx-0 text:[18px] lg:text-[20px] text-gray-700'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                 </div>
             </div>
-            <div className='flex justify-center gap-4  items-center my-8 overflow-hidden'>
+            <div className='flex justify-center gap-4  items-center my-8 overflow-hidden px-3'>
                 <Link to='https://play.google.com/store/apps?hl=en'>
                     <div className='flex gap-2.5 items-center border border-gray-300 p-4 rounded-2xl'>
                         <img className='h-10' src={play} alt="" />

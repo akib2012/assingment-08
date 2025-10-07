@@ -1,11 +1,21 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useDataloader } from '../Hooks/usedataloader';
 import Appcard from '../Components/Appcard';
 
 
 const Allapps = () => {
     const { fetchdata} = useDataloader();
+
+
+    const [search, setSearch] = useState('');
+    const handlesearch = (e) => {
+        setSearch(e.target.value);
+    }
+    // console.log(search);
+    const searchdata = search.trim().replace(/\s+/g, "").toLocaleLowerCase();
+    const finddata = searchdata? fetchdata.filter(app => app.title.toLocaleLowerCase().includes(searchdata)):fetchdata
+    
     
 
 
@@ -20,10 +30,10 @@ const Allapps = () => {
             </div>
             <div className='flex justify-between items-center mb-7'>
                 <div>
-                    <h3 className='text-xl font-bold underline'>({fetchdata.length})Apps Found</h3>
+                    <h3 className='text-xl font-bold underline'>({finddata.length})Apps Found</h3>
                 </div>
                 <div>
-                    <label className="input shadow border border-gray-600 w-80">
+                    <label className="input shadow border border-gray-600 w-36 md:w-50 lg:w-80">
                         <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <g
                                 strokeLinejoin="round"
@@ -36,15 +46,15 @@ const Allapps = () => {
                                 <path d="m21 21-4.3-4.3"></path>
                             </g>
                         </svg>
-                        <input type="search" required placeholder="Search" />
+                        <input value={search} onChange={handlesearch} type="search" required placeholder="Search" />
                     </label>
                 </div>
             </div>
 
 
-            <div className='grid grid-cols-4 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                 {
-                    fetchdata.map(apps => <Appcard apps={apps}></Appcard>)
+                    finddata.map(apps => <Appcard apps={apps}></Appcard>)
                 }
             </div>
         </div>
