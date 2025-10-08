@@ -2,6 +2,9 @@ import React from 'react';
 import play from '../assets/logoplay.png'
 import apple from '../assets/app-store.png'
 import hero from '../assets/hero.png'
+import dowlodedimg from '../assets/icon-downloads.png'
+import reviewimg from '../assets/logoplay.png'
+import ratingimg from '../assets/icon-ratings.png'
 import { Link } from 'react-router';
 
 const Banner = () => {
@@ -34,29 +37,32 @@ const Banner = () => {
             </div>
 
             <div className=" w-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-center py-12 px-4">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-10">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-10">
                     Trusted By Millions, Built For You
                 </h2>
                 <div className="flex flex-col md:flex-row justify-center items-center gap-10">
                     {/* Total Downloads */}
-                    <div>
+                    <div className='flex  flex-col justify-center items-center'>
+                        <img src={dowlodedimg} alt="" />
                         <p className="text-4xl font-bold">29.6M</p>
                         <p className="text-sm mt-2">21% More Than Last Month</p>
-                        <p className="text-sm mt-1 text-gray-200">Total Downloads</p>
+                        <p className="text-sm mt-1 text-gray-200 font-bold">Total Downloads</p>
                     </div>
 
                     {/* Total Reviews */}
-                    <div>
+                    <div className='flex  flex-col justify-center items-center'>
+                        <img src={ratingimg} alt="" />
                         <p className="text-4xl font-bold">906K</p>
                         <p className="text-sm mt-2">46% More Than Last Month</p>
-                        <p className="text-sm mt-1 text-gray-200">Total Reviews</p>
+                        <p className="text-sm mt-1 text-gray-200 font-bold ">Total Reviews</p>
                     </div>
 
                     {/* Active Apps */}
-                    <div>
+                    <div className='flex  flex-col justify-center items-center'>
+                        <img src={reviewimg} alt="" className='w-10 h-10' />
                         <p className="text-4xl font-bold">132+</p>
                         <p className="text-sm mt-2">31 More Will Launch</p>
-                        <p className="text-sm mt-1 text-gray-200">Active Apps</p>
+                        <p className="text-sm mt-1 text-gray-200 font-bold">Active Apps</p>
                     </div>
                 </div>
             </div>
