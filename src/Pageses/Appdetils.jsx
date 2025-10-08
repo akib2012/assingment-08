@@ -7,6 +7,7 @@ import review from '../assets/icon-review.png'
 import { handledetailsset } from '../Localstorage/Localstorage';
 import Ratingchart from '../Components/Ratingchart';
 
+
 const Appdetils = () => {
     const [btnchange, setBtnchange] = useState(false);
 
@@ -19,11 +20,13 @@ const Appdetils = () => {
     }
     const card = fetchdata.find(crd => String(crd.id) === id)
 
-     if (!card) {
-        return <Navigate to="/errorelemet" replace />; 
+    if (!card) {
+        return <Navigate to="/errorelemet" replace />;
     }
 
     const rating = card.ratings;
+
+    
 
     return (
         <div className='bg-[#F5F5F5] -mb-20'>
@@ -84,13 +87,16 @@ const Appdetils = () => {
                     <Ratingchart rating={rating}></Ratingchart>
 
                 </div>
+                <div className='mt-10 text-gray-400'>
+                    <hr />
+                </div>
                 <div className='mt-6 mx-6 md:mx-0'>
 
                     <h3 className='text-2xl font-semibold'>Description</h3>
 
                     <div className='mb-11 pb-8 pt-4 text-gray-400 text-justify'>
                         {card.description}
-                        
+
                     </div>
                 </div>
 

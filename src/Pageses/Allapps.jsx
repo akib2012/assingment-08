@@ -2,13 +2,26 @@
 import React, { useState } from 'react';
 import { useDataloader } from '../Hooks/usedataloader';
 import Appcard from '../Components/Appcard';
+import { RiseLoader } from 'react-spinners';
 
 
 const Allapps = () => {
-    const { fetchdata} = useDataloader();
+     const [search, setSearch] = useState('');
+    const { fetchdata, loading} = useDataloader();
 
-
-    const [search, setSearch] = useState('');
+     if (loading) {
+        return (
+            <div className='flex justify-center items-center mt-16'>
+                <RiseLoader
+                    color="#db47bf"
+                    margin={5}
+                    size={25}
+                    speedMultiplier={1}
+                />
+            </div>
+        )
+    }
+   
     const handlesearch = (e) => {
         setSearch(e.target.value);
     }
