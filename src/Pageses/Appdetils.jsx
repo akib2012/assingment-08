@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDataloader } from '../Hooks/usedataloader';
 import { useParams } from 'react-router';
 import dowimg from '../assets/icon-downloads.png'
 import rating from '../assets/icon-ratings.png'
 import review from '../assets/icon-review.png'
+import { handledetailsset } from '../Localstorage/Localstorage';
 
 const Appdetils = () => {
+    const [btnchange, setBtnchange] = useState(false);
 
-    const {id} = useParams();
-    
-    const {fetchdata, loading} = useDataloader();
-    
-    if(loading){
+    const { id } = useParams();
+
+    const { fetchdata, loading } = useDataloader();
+
+    if (loading) {
         return <p>loading ........</p>
     }
     const card = fetchdata.find(crd => String(crd.id) === id) || {}
-   
+
 
 
     return (
@@ -47,9 +49,20 @@ const Appdetils = () => {
                         <p className='text-3xl font-bold'>54K</p>
                     </div>
                 </div>
-                <div className='bg-[#00D390] w-55 py-4 px-4 rounded-xl text-white font-bold hover:-translate-y-1 cursor-pointer'>
-                    <button>Install Now (291 MB)</button>
+                <div
+
+                   onClick={() => {handledetailsset(card); !btnchange && setBtnchange(true) }}
+
+                    className={`w-55 py-4 px-4 rounded-xl font-bold transition duration-300 ${btnchange
+                            ? "bg-gray-400 text-white text-2xl font-bold cursor-not-allowed"
+                            : "bg-[#00D390] text-white hover:-translate-y-1 active:scale-95 cursor-pointer"
+                        }`}
+                >
+                    <button disabled={btnchange}>
+                        {btnchange ? "Installed" : "Install Now (291 MB)"}
+                    </button>
                 </div>
+
 
 
             </div>

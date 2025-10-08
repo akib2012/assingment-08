@@ -1,0 +1,94 @@
+import React, { useEffect, useState } from 'react';
+import Installappcard from '../Components/Installappcard';
+import { Link } from 'react-router';
+
+const Installedapp = () => {
+
+    const [appcard, setAppcard] = useState([]);
+    const [shortorder, setShortorder] = useState('none');
+
+    useEffect(() => {
+        const savedata = JSON.parse(localStorage.getItem('carddata'));
+        if (savedata) setAppcard(savedata);
+    }, [])
+
+
+
+
+    /* short perform */
+
+    const hadnleshortordwer = (
+        () => {
+            console.log("clicker succesfully");
+            if (shortorder === 'size-ass') {
+                return [...appcard].sort((a, b) => a.size - b.size)
+            } else if (shortorder === 'size-des') {
+                return [...appcard].sort((a, b) => b.size - a.size)
+            } else {
+                return appcard;
+            }
+        }
+    )();
+
+
+    /* remove card  */
+
+    const deletdata = (id) => {
+        const exsitngdata = JSON.parse(localStorage.getItem('carddata'))
+        let updatelist = exsitngdata.filter(dtaa => dtaa.id !== id)
+
+        setAppcard(updatelist)
+
+        localStorage.setItem('carddata', JSON.stringify(updatelist));
+    }
+
+    return (
+        <div className='max-w-10/12 mx-auto'>
+            <div>
+                <div className='my-10 text-center'>
+                    <h2 className='text-4xl font-bold'>Your Installed Apps</h2>
+                    <p className='my-6 text-[20px] text-gray-500'>Explore All Trending Apps on the Market developed by us</p>
+
+                </div>
+
+                <div className='flex justify-between items-center'>
+                    <h3 className='text-2xl font-bold '>({appcard.length}) App Found </h3>
+                    <select value={shortorder} onChange={(e) => setShortorder(e.target.value)} className='text-xl font-bold border rounded-xl'>
+                        <option value="none"> Short by Size</option>
+                        <option value="size-ass"> low to high</option>
+                        <option value="size-des"> high to low</option>
+
+
+                    </select>
+                </div>
+            </div>
+
+
+            <div className='mt-10'>
+
+                {
+                    appcard.length !== 0 ? (
+                        hadnleshortordwer.map(card => (
+                            <Installappcard deletdata={deletdata} card={card} />
+
+                        ))
+                    ) : (
+                        <div>
+                            <p className="text-center text-3xl font-bold text-gray-600">No App available to install</p>
+                            <div className='flex justify-center items-center mt-8'>
+                                <Link to='/allapps'><button className='btn bg-[#00D390] text-white font-bold'>Go Apps</button>
+                                </Link>
+                            </div>
+                        </div>
+
+                    )
+                }
+
+            </div>
+        </div>
+
+
+    );
+};
+
+export default Installedapp;
