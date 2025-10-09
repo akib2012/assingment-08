@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <div className="navbar bg-base-100 shadow-sm mx-2 md:px-10 lg:px-12">
             <div className="navbar-start">
-               
+
                 <div className="dropdown">
                     <div
                         tabIndex={0}
@@ -29,7 +29,7 @@ const Navbar = () => {
                         </svg>
                     </div>
 
-               
+
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
@@ -76,12 +76,14 @@ const Navbar = () => {
                 </div>
 
                 {/* Logo */}
-                <div className="flex gap-[-8px] md:gap-0 justify-center items-center">
-                    <img className="h-8 w-6 md:w-8" src={logoimg} alt="logo" />
-                    <Link to="/" className="btn btn-ghost text-xl">
-                        HERO.IO
-                    </Link>
-                </div>
+                <Link>
+                    <div className="flex gap-[-8px] md:gap-0 justify-center items-center">
+                        <img className="h-8 w-6 md:w-8" src={logoimg} alt="logo" />
+                        <button className="btn btn-ghost text-xl">
+                            HERO.IO
+                        </button>
+                    </div>
+                </Link>
             </div>
 
             {/* Desktop Menu */}
@@ -128,7 +130,7 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            
+
             <div className="navbar-end">
                 <Link to="https://github.com/akib2012">
                     <button className="btn bg-gradient-to-r from-purple-700 to-purple-500 text-xl text-white py-2">

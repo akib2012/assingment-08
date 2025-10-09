@@ -27,10 +27,9 @@ const Allapps = () => {
         app.title.toLocaleLowerCase().includes(searchdata)
       )
     : fetchdata;
-
+    
   return (
     <div className="max-w-10/12 mx-auto">
-    
       {loading ? (
         <div className="flex justify-center items-center mt-16">
           <RiseLoader color="#db47bf" margin={5} size={25} speedMultiplier={1} />
@@ -81,10 +80,13 @@ const Allapps = () => {
             </div>
           </div>
 
-         
           {searchLoading ? (
             <div className="flex justify-center items-center mt-10">
               <RiseLoader color="#db47bf" margin={5} size={20} />
+            </div>
+          ) : finddata.length === 0 ? (
+            <div className="text-center mt-10 text-gray-500 text-xl font-semibold">
+              ❌ No App Found
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
