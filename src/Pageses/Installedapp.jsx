@@ -69,14 +69,14 @@ const Installedapp = () => {
             text: "You won't be able to revert this!",
             icon: "warning",
             showCancelButton: true,
-            confirmButtonText: "Yes, delete it!",
+            confirmButtonText: "Yes, Uninstall it!",
             cancelButtonText: "No, cancel!",
             reverseButtons: true
         }).then((result) => {
             if (result.isConfirmed) {
                 swalWithBootstrapButtons.fire({
-                    title: "Deleted!",
-                    text: "Your file has been deleted.",
+                    title: "Uninstall!",
+                    text: "Your file has been Uninstalled",
                     icon: "success"
                 });
             } else if (

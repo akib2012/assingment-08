@@ -12,7 +12,7 @@ const Installappcard = ({card, deletdata}) => {
                     <div >
                         <p className='text-2xl font-semibold'>{card.title}</p>
                         <div className='flex justify-around gap-6 items-center mt-6'>
-                            <p className='flex justify-around items-center gap-3 text-[#00D390] font-bold'><img src={dowlodedimg} alt="" className='w-5 h-5' /><span>{card.downloads}MB</span></p>
+                            <p className='flex justify-around items-center gap-3 text-[#00D390] font-bold'><img src={dowlodedimg} alt="" className='w-5 h-5' /><span>{card.downloads}M</span></p>
                             <p className='flex justify-around items-center gap-3 text-yellow-500 font-bold'> <img src={ratingimg} alt="" className='w-5 h-5' />{card.ratingAvg}</p>
                             <p className='font-bold'>{card.size} MB</p>
                         </div>
