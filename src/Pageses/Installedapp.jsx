@@ -35,11 +35,11 @@ const Installedapp = () => {
 
     const hadnleshortordwer = (
         () => {
-            console.log("clicker succesfully");
+            
             if (shortorder === 'size-ass') {
-                return [...appcard].sort((a, b) => a.size - b.size)
+                return [...appcard].sort((a, b) => a.downloads - b.downloads)
             } else if (shortorder === 'size-des') {
-                return [...appcard].sort((a, b) => b.size - a.size)
+                return [...appcard].sort((a, b) => b.downloads - a.downloads)
             } else {
                 return appcard;
             }

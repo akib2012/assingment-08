@@ -12,7 +12,7 @@ const Appcard = ({apps}) => {
                     <div className="p-4 ">
                         <h3 className="text-lg font-semibold text-gray-900 mb-2">{apps.title}</h3>
                         <div className="flex justify-between items-center ">
-                            <span className="text-sm text-green-600 font-medium"><i class="fa-solid fa-download"></i> {apps.downloads}</span>
+                            <span className="text-sm text-green-600 font-medium"><i class="fa-solid fa-download"></i> {apps.downloads}M</span>
                             <span className="text-sm px-2 py-1 bg-yellow-100 text-yellow-800 rounded-md">★ {apps.ratingAvg}</span>
                         </div>
                     </div>

@@ -46,17 +46,17 @@ const Appdetils = () => {
                             <div>
                                 <img src={dowimg} alt="" />
                                 <h3 className='py-4'>Downloads</h3>
-                                <p className='text-3xl font-bold'>8M</p>
+                                <p className='text-3xl font-bold'>{card.downloads}M</p>
                             </div>
                             <div >
                                 <img src={raating} alt="" />
                                 <h3 className='py-4'>Average Ratings</h3>
-                                <p className='text-3xl font-bold'>4.9</p>
+                                <p className='text-3xl font-bold'>{card.ratingAvg}</p>
                             </div>
                             <div>
                                 <img src={review} alt="" />
                                 <h3 className='py-4'>Total Reviews</h3>
-                                <p className='text-3xl font-bold'>54K</p>
+                                <p className='text-3xl font-bold'>{card.reviews}</p>
                             </div>
                         </div>
                         <div
@@ -69,7 +69,7 @@ const Appdetils = () => {
                                 }`}
                         >
                             <button disabled={btnchange}>
-                                {btnchange ? "Installed" : "Install Now (291 MB)"}
+                                {btnchange ? "Installed" : `Install Now( ${card.size}) MB`}
                             </button>
                         </div>
 
