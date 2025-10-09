@@ -61,17 +61,17 @@ const Appdetils = () => {
               <div>
                 <img src={dowimg} alt="" />
                 <h3 className="py-4">Downloads</h3>
-                <p className="text-xl md:text font-bold">{card.downloads}M</p>
+                <p className="text-xl md:text font-bold mt-4">{card.downloads}M</p>
               </div>
               <div>
                 <img src={raating} alt="" />
                 <h3 className="py-4 text-wrap px-2 md:px-0.5">Average Ratings</h3>
-                <p className="text-xl md:text font-bold">{card.ratingAvg}</p>
+                <p className="text-xl md:text font-bold mt-4">{card.ratingAvg}</p>
               </div>
               <div>
                 <img src={review} alt="" />
                 <h3 className="py-4">Total Reviews</h3>
-                <p className="text-xl md:text-3xl font-bold">{card.reviews}</p>
+                <p className="text-xl md:text-3xl font-bold mt-4">{card.reviews}</p>
               </div>
             </div>
 
